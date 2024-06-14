@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "name": "Task 1",
+            "description": "description of tassk 1",
+            "due_date": "2024-06-14",
+            "completed": false
+        },
+        {
+            "id": 2,
+            "name": "Task 2",
+            "description": "description of tassk 2",
+            "due_date": "2024-06-14",
+            "completed": false
+        },
+        {
+            "id": 3,
+            "name": "Task 3",
+            "description": "description of tassk 3",
+            "due_date": "2024-06-14",
+            "completed": true
+        }
+    ],
+    "next_id": 4
+}
