@@ -2,27 +2,32 @@
 
 Welcome to the Encryptix Python internship repository! This repository contains Python projects completed as part of the internship program at Encryptix. Below are the tasks that have been completed:
 
-## Tasks Completed
+## Project Tasks
 
-### Task 1: To-Do List Application
+- **Task 1: To-Do List Application**
+  - Efficiently manage tasks through a customizable To-Do List application.
+  - Features both a graphical user interface (GUI) and a command-line interface (CLI).
+  - Allows users to create, update, and track tasks seamlessly.
 
-A To-Do List application designed to help users manage tasks efficiently. Users can create, update, and track their to-do lists either through a command-line interface (CLI) or a graphical user interface (GUI).
+- **Task 2: Calculator**
+  - Perform basic arithmetic operations (addition, subtraction, multiplication, division).
+  - User-friendly interface for inputting two numbers and selecting operation.
+  - Displays computed results instantly for swift calculations.
 
-### Task 2: Calculator
+- **Task 3: Password Generator**
+  - Generate strong and randomized passwords based on user specifications.
+  - Specify password length and complexity to meet security requirements.
+  - Instantly displays generated passwords for immediate use.
 
-A simple calculator application with basic arithmetic operations. Users input two numbers and choose an operation (addition, subtraction, multiplication, division), and the calculator computes and displays the result.
+- **Task 4: Rock-Paper-Scissors Game**
+  - Engage in a classic game against the computer (rock, paper, scissors).
+  - Random computer selections with clear game rules (e.g., rock beats scissors).
+  - Displays game outcomes and provides an interactive user experience.
 
-### Task 3: Password Generator
-
-A password generator application that creates strong and random passwords based on user specifications. Users can specify the length and complexity of the password, and the application generates and displays the password on the screen.
-
-### Task 4: Rock-Paper-Scissors Game
-
-A classic game of Rock-Paper-Scissors where users compete against the computer. The user chooses rock, paper, or scissors, and the computer generates a random choice. The application determines the winner based on the game rules (rock beats scissors, scissors beat paper, paper beats rock) and displays the result.
-
-### Task 5: Contact Book
-
-A contact management application that stores contact information including name, phone number, email, and address. Users can add, view, search, update, and delete contacts. The application provides a user-friendly interface for easy interaction with the contact list.
+- **Task 5: Contact Book**
+  - Manage contact information including names, phone numbers, emails, and addresses.
+  - Features include adding, viewing, searching, updating, and deleting contacts.
+  - User-friendly interface designed for efficient interaction and organization.
 
 ## Repository Structure
 
