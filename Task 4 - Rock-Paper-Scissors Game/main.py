@@ -27,47 +27,59 @@ def determine_winner(user_choice, computer_choice):
         return "computer"
 
 
-def display_result(user_choice, computer_choice, winner):
-    print("\n--------------------------------")
-    print(f" You chose: {user_choice.upper()}")
-    print(f" Computer chose: {computer_choice.upper()}")
-    print("--------------------------------")
-
-    time.sleep(0.5)  # Adding a slight delay for better readability
-
-    if winner == "tie":
-        print(" It's a tie!")
-    elif winner == "user":
-        print(" You win!")
-    else:
-        print(" You lose!")
-    print("--------------------------------\n")
+def valid_number_of_games(total_games):
+    if total_games % 2 == 1:
+        return True
+    return False
 
 
 def main():
     user_score = 0
     computer_score = 0
+    total_game_num = int(input("Enter the total number of games to play (must be an odd number): "))
+    while not valid_number_of_games(total_game_num):
+        print("please put an odd number!")
+        total_game_num = int(input("Enter the total number of games to play (must be an odd number): "))
 
-    while True:
+    games_to_win = (total_game_num // 2) + 1
+
+    for game in range(total_game_num):
         user_choice = get_user_choice()
         computer_choice = get_computer_choice()
         winner = determine_winner(user_choice, computer_choice)
 
-        display_result(user_choice, computer_choice, winner)
+        print("\n--------------------------------")
+        print(f" You chose: {user_choice.upper()}")
+        print(f" Computer chose: {computer_choice.upper()}")
+        print("--------------------------------")
 
-        if winner == "user":
+        time.sleep(0.5)  # Adding a slight delay for better readability
+
+        if winner == "tie":
+            print(" It's a tie!")
+        elif winner == "user":
+            print(" You win!")
             user_score += 1
-        elif winner == "computer":
+        else:
+            print(" You lose!")
             computer_score += 1
+        print("--------------------------------\n")
 
         print(f" Score - YOU: {user_score} | COMPUTER: {computer_score}\n")
 
-        play_again = input("Do you want to play another round? (y/n): ").lower()
-        if play_again != "y":
-            print("\nThank you for playing! Final score:")
-            print(f" YOU: {user_score} | COMPUTER: {computer_score}")
+        if user_score == games_to_win:
+            print("Congratulations! You are the final winner!")
             break
+        elif computer_score == games_to_win:
+            print("The computer is the final winner. Better luck next time!")
+            break
+
+    if user_score != games_to_win and computer_score != games_to_win:
+        print("\nThank you for playing! Final score:")
+        print(f" YOU: {user_score} | COMPUTER: {computer_score}")
 
 
 if __name__ == "__main__":
     main()
+
+
